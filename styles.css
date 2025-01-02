@@ -1,0 +1,73 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-light: hsl(212, 45%, 89%);
+  --slate-medium: hsl(216, 15%, 48%);
+  --slate-dark: hsl(218, 44%, 22%);
+  --attribution-bg: hsl(216, 90%, 57%);
+  --font-thin: 400;
+  --font-bold: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--slate-light);
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 350px;
+  height: 550px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.text-wrapper {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-weight: var(--font-bold);
+  color: var(--slate-dark);
+}
+p {
+  color: var(--slate-medium);
+  font-weight: var(--font-thin);
+  margin: 1rem 1.5rem 0 1.5rem;
+}
+.attribution {
+  background-color: var(--attribution-bg);
+  padding: 1rem 1rem;
+  color: white;
+  border-radius: 2rem;
+}
+.attribution a {
+  color: var(--slate-light);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: var(--slate-dark);
+}
+@media screen and (max-width: 481px) {
+  .attribution {
+    display: none;
+  }
+}
