@@ -65,6 +65,7 @@ p {
 }
 .attribution a:hover {
   color: var(--slate-dark);
+  transition: color .3s ease;
 }
 @media screen and (max-width: 481px) {
   .attribution {
